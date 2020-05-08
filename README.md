@@ -1,11 +1,3 @@
-# Ktor on Google App Engine Standard
+# Gobus app backend ktor google app engine
 
-To download and run this sample, download the code with the commands below, and
-then follow the steps in the [Community Tutorial][tutorial].
-
-```sh
-git clone git@github.com:GoogleCloudPlatform/kotlin-samples
-cd kotlin-samples/appengine/ktor
-```
-
-[tutorial]: https://cloud.google.com/community/tutorials/kotlin-ktor-app-engine-java8
+This project contains a project to Gobus app based on ktor framework and hosted in Gooble App Engine

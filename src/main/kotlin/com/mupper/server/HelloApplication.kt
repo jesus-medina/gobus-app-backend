@@ -28,6 +28,7 @@ import io.ktor.features.ContentNegotiation
 import io.ktor.features.DefaultHeaders
 import io.ktor.html.respondHtml
 import io.ktor.jackson.jackson
+import io.ktor.response.respond
 import io.ktor.routing.get
 import io.ktor.routing.routing
 import kotlinx.html.body
@@ -82,9 +83,9 @@ fun Application.main() {
             }
         }
         // routes for GobusApp mobile
-        get("/travelers") {
+        get("/traveler") {
             val travelerRoute = KoinJavaComponent.get(TravelerRoute::class.java)
-            travelerRoute(call)
+            call.respond(travelerRoute(call))
         }
     }
 }
